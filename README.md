@@ -30,6 +30,18 @@ source .venv/bin/activate
 pip install -e ".[dev]"
 ```
 
+### Building and Installing as Wheel (`.whl`)
+
+To build standard PEP 517 / PEP 621 `.whl` distribution packages:
+
+```bash
+# Build the wheel into dist/
+python -m build --wheel
+
+# Install the generated .whl directly
+pip install dist/modelaudit-0.1.0-py3-none-any.whl
+```
+
 ---
 
 ## Basic Usage
